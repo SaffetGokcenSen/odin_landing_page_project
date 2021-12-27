@@ -28,6 +28,12 @@ header {
     margin-left: auto;
 }
 
+.links {
+    font-size: 18px;
+    color: #E5E7EB;
+    
+}
+
 .header-body {
     display: flex;
     margin-top: 100px;
@@ -40,21 +46,27 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     border: 1px solid white;
+    justify-content: space-around;
 }
 
 .hero-main-text {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+    padding: 15px;
+    /*border: 1px solid yellow;*/
 }
 
 .hero-secondary-text {
     font-size: 18px;
     color: #E5E7EB;
+    /*border: 1px solid green;*/
+    padding: 15px;
 }
 
 .button-part{
     display: flex;
+    padding: 15px;
 }
 
 button {
@@ -71,10 +83,13 @@ button {
 }
 
 .header-body-image {
-    flex: 1 1 0;
+    flex: 2 1 0;
     border: 1px solid white;
-    width: "400";
-    height: "100";
     margin-left: 5px;
     /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+}
+
+img {
+    width: 1000px;
+    height: 400px;
 }
