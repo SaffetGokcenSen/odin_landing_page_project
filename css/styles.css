@@ -1,6 +1,7 @@
 .page {
     display: flex;
     flex-direction: column;
+    height: 150vh;
 }
 
 header {
@@ -44,7 +45,7 @@ header {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
 }
 
@@ -84,7 +85,7 @@ button {
 }
 
 .header-body-image img {
-    width: 1000px;
+    width: 100%;
     height: 400px;
 }
 
@@ -101,4 +102,38 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.illustration-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.captioned-illustration {
+    display: flex;
+    flex: 0 1 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    border: 3px solid blue;
+    border-radius: 10%;
+    height: 150px;
+    width: 150px;
+}
+
+.caption {
+    color: darkslateblue;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.quote-part {
+    background-color: #E5E7EB;
 }
