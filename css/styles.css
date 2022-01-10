@@ -1,4 +1,5 @@
-/*Size Content to The Viewport
+/*
+Size Content to The Viewport
 Users are used to scroll websites vertically on both desktop and mobile devices - but not horizontally!
 
 So, if the user is forced to scroll horizontally, or zoom out, to see the whole web page it results in a poor user experience.
@@ -9,7 +10,8 @@ Some additional rules to follow:
 
 2. Do NOT let the content rely on a particular viewport width to render well - Since screen dimensions and width in CSS pixels vary widely between devices, content should not rely on a particular viewport width to render well.
 
-3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.*/
+3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.
+*/
 
 .page {
     display: flex;
@@ -22,8 +24,6 @@ header {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -31,22 +31,52 @@ header {
 .header-top {
     display: flex;
     align-items: center;
-    gap: 30px;
-}
-
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
 }
 
 .push-right {
     margin-left: auto;
 }
 
-.links {
-    font-size: 18px;
-    color: #E5E7EB;
-    
+@media only screen and (min-width: 1200px){
+    header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .header-top {
+        gap: 30px;
+    }
+
+    .header-logo {
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+
+    .links {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-top {
+        gap: 15px;
+    }
+
+    .header-logo {
+        font-size: 18px;
+        color: burlywood;
+    }
+
+    .links {
+        font-size: 14px;
+        color: burlywood;
+    }
 }
 
 .header-body {
