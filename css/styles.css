@@ -13,6 +13,24 @@ Some additional rules to follow:
 3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.
 */
 
+
+/* 
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+
 .page {
     display: flex;
     flex-direction: column;
@@ -37,52 +55,8 @@ header {
     margin-left: auto;
 }
 
-@media only screen and (min-width: 1200px){
-    header {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    .header-top {
-        gap: 30px;
-    }
-
-    .header-logo {
-        font-size: 24px;
-        color: #F9FAF8;
-    }
-
-    .links {
-        font-size: 18px;
-        color: #E5E7EB;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    header {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-top {
-        gap: 15px;
-    }
-
-    .header-logo {
-        font-size: 18px;
-        color: burlywood;
-    }
-
-    .links {
-        font-size: 14px;
-        color: burlywood;
-    }
-}
-
 .header-body {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -95,13 +69,11 @@ header {
 }
 
 .hero-main-text {
-    font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
 }
 
 .hero-secondary-text {
-    font-size: 18px;
     color: #E5E7EB;
 }
 
@@ -126,14 +98,94 @@ header {
 }
 
 .header-body-image {
+    width: 100%;
+    margin-top: 10px;
     flex: 2 1 0;
-    margin-left: 40px;
     /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
 }
 
 .header-body-image img {
     width: 100%;
     height: 300px;
+}
+
+@media only screen and (min-width: 1200px){
+    header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .header-top {
+        gap: 30px;
+    }
+
+    .header-logo {
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+
+    .links {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+
+    .header-body {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .hero-main-text {
+        font-size: 48px;
+    }
+
+    .hero-secondary-text {
+        font-size: 18px;
+    }
+
+    .header-body-image {
+        margin-left: 40px;
+        /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-top {
+        gap: 15px;
+    }
+
+    .header-logo {
+        font-size: 18px;
+        color: burlywood;
+    }
+
+    .links {
+        font-size: 14px;
+        color: burlywood;
+    }
+
+    .header-body {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .hero-main-text {
+        font-size: 36px;
+    }
+
+    .hero-secondary-text {
+        font-size: 16px;
+    }
+
+    .header-body-image {
+        flex: 2 1 0;
+        /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+    }
 }
 
 .information-part {
