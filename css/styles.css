@@ -109,6 +109,48 @@ header {
     height: 300px;
 }
 
+.information-part {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.information-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.captioned-illustration {
+    display: flex;
+    flex: 0 1 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    border: 3px solid blue;
+    border-radius: 10%;
+    height: 150px;
+    width: 150px;
+}
+
+.caption {
+    color: darkslateblue;
+    text-align: center;
+}
+
 @media only screen and (min-width: 1200px){
     header {
         padding-left: 200px;
@@ -145,6 +187,29 @@ header {
     .header-body-image {
         margin-left: 40px;
         /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+    }
+
+    .information-part {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .information-title {
+        font-size: 36px;
+    }
+
+    .illustration-part {
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .illustration {
+        height: 150px;
+        width: 150px;
+    }
+
+    .caption {
+        margin-top: 5px;
     }
 }
 
@@ -186,53 +251,30 @@ header {
         flex: 2 1 0;
         /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
     }
-}
 
-.information-part {
-    flex: 1 0 0;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-}
+    .information-part {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
 
-.information-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .information-title {
+        font-size: 27px;
+    }
 
-.illustration-part {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 50px;
-}
+    .illustration-part {
+        gap: 16px;
+        margin-top: 16px;
+    }
 
-.captioned-illustration {
-    display: flex;
-    flex: 0 1 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .illustration {
+        height: 100px;
+        width: 100px;
+    }
 
-.illustration {
-    border: 3px solid blue;
-    border-radius: 10%;
-    height: 150px;
-    width: 150px;
-}
-
-.caption {
-    color: darkslateblue;
-    text-align: center;
-    margin-top: 5px;
+    .caption {
+        margin-top: 3px;
+        font-size: 14px;
+    }
 }
 
 .quote-part {
