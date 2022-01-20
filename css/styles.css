@@ -200,6 +200,19 @@ header {
     font-weight: bold;
 }
 
+.copyright {
+    flex: 0 1 0;
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.copyright-text {
+    color: white;
+}
+
 @media only screen and (min-width: 1200px){
     header {
         padding-left: 200px;
@@ -301,6 +314,10 @@ header {
         font-size: 20px;
         width: 150px;
         height: 50px;
+    }
+
+    .copyright-text {
+        font-size: 20px;
     }
 }
 
@@ -408,18 +425,8 @@ header {
         width: 100px;
         height: 30px;
     }
-}
 
-.copyright {
-    flex: 0 1 0;
-    display: flex;
-    background-color: #1F2937;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.copyright-text {
-    color: white;
-    font-size: 20px;
+    .copyright-text {
+        font-size: 15px;
+    }
 }
