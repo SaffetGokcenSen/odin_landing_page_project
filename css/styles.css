@@ -78,12 +78,10 @@ header {
 }
 
 .button-part{
-    display: flex;
     margin-top: 5px;
 }
 
 .button-part button {
-    flex: 0 1 auto;
     color: white;
     background-color: #3882F6;
     text-align: center;
@@ -180,17 +178,26 @@ header {
     display: flex;
     background-color: #3882F6;
     color: white;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
     border-radius: 10px;
-    justify-content: space-around;
     align-items: center;
+}
+
+.call-to-action-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action-button button {
+    color: white;
+    background-color: #3882F6;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 1200px){
@@ -267,6 +274,33 @@ header {
     .quote-owner {
         width: 40%;
         font-size: 24px;
+    }
+
+    .call-to-action-container {
+        margin-right: 11%;
+        margin-left: 11%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding-right: 6%;
+        padding-left: 6%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: space-around;
+    }
+
+    .call-text {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .sign-up-text {
+        font-size: 20px;
+    }
+
+    .call-to-action-button button {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
     }
 }
 
@@ -347,27 +381,33 @@ header {
         width: 100%;
         font-size: 18px;
     }
-}
 
-.call-to-action-button button {
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    width: 150px;
-    height: 50px;
-    color: white;
-    background-color: #3882F6;
-}
+    .call-to-action-container {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-between;
+    }
 
-.call-text {
-    font-size: 26px;
-    font-weight: bold;
-}
+    .call-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
-.sign-up-text {
-    font-size: 20px;
+    .sign-up-text {
+        font-size: 16px;
+    }
+
+    .call-to-action-button button {
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
 }
 
 .copyright {
