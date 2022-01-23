@@ -46,19 +46,88 @@ header {
     padding-bottom: 15px;
 }
 
+@media only screen and (min-width: 1200px){
+    header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .header-top {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (min-width: 1200px){
+    .header-top {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header-top {
+        gap: 15px;
+    }
 }
 
 .push-right {
     margin-left: auto;
 }
 
+@media only screen and (min-width: 1200px){
+    .header-logo {
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header-logo {
+        font-size: 18px;
+        color: burlywood;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .links {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .links {
+        font-size: 14px;
+        color: burlywood;
+    }
+}
+
 .header-body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 1200px){
+    .header-body {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header-body {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .header-body-text {
@@ -73,8 +142,32 @@ header {
     color: #F9FAF8;
 }
 
+@media only screen and (min-width: 1200px){
+    .hero-main-text {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hero-main-text {
+        font-size: 36px;
+    }
+}
+
 .hero-secondary-text {
     color: #E5E7EB;
+}
+
+@media only screen and (min-width: 1200px){
+    .hero-secondary-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hero-secondary-text {
+        font-size: 16px;
+    }
 }
 
 .button-part{
@@ -102,6 +195,13 @@ header {
     /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
 }
 
+@media only screen and (min-width: 1200px){
+    .header-body-image {
+        margin-left: 40px;
+        /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+    }
+}
+
 .header-body-image img {
     width: 100%;
     height: 300px;
@@ -113,6 +213,20 @@ header {
     flex-direction: column;
 }
 
+@media only screen and (min-width: 1200px){
+    .information-part {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .information-part {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+}
+
 .information-title {
     font-size: 36px;
     font-weight: 800;
@@ -122,11 +236,37 @@ header {
     align-items: center;
 }
 
+@media only screen and (min-width: 1200px){
+    .information-title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .information-title {
+        font-size: 27px;
+    }
+}
+
 .illustration-part {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 1200px){
+    .illustration-part {
+        gap: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .illustration-part {
+        gap: 16px;
+        margin-top: 16px;
+    }
 }
 
 .captioned-illustration {
@@ -144,9 +284,36 @@ header {
     width: 150px;
 }
 
+@media only screen and (min-width: 1200px){
+    .illustration {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .illustration {
+        height: 100px;
+        width: 100px;
+    }
+}
+
 .caption {
     color: darkslateblue;
     text-align: center;
+}
+
+@media only screen and (min-width: 1200px){
+    .caption {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .caption {
+        margin-top: 3px;
+        font-size: 14px;
+    }
 }
 
 .quote-part {
@@ -158,6 +325,20 @@ header {
     background-color: #E5E7EB;
 }
 
+@media only screen and (min-width: 1200px){
+    .quote-part {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .quote-part {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+}
+
 .quote-text {
     height: 250px;
     text-align: center;
@@ -167,10 +348,38 @@ header {
 
 }
 
+@media only screen and (min-width: 1200px){
+    .quote-text {
+        width: 40%;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .quote-text {
+        width: 80%;
+        font-size: 27px;
+    }
+}
+
 .quote-owner {
     flex: 0 1 0;
     text-align: right;
     font-weight: bolder;
+}
+
+@media only screen and (min-width: 1200px){
+    .quote-owner {
+        width: 40%;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .quote-owner {
+        width: 100%;
+        font-size: 18px;
+    }
 }
 
 .call-to-action-container {
@@ -182,10 +391,64 @@ header {
     align-items: center;
 }
 
+@media only screen and (min-width: 1200px){
+    .call-to-action-container {
+        margin-right: 11%;
+        margin-left: 11%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding-right: 6%;
+        padding-left: 6%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .call-to-action-container {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-between;
+    }
+}
+
 .call-to-action-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media only screen and (min-width: 1200px){
+    .call-text {
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .call-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .sign-up-text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sign-up-text {
+        font-size: 16px;
+    }
 }
 
 .call-to-action-button button {
@@ -198,6 +461,22 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px){
+    .call-to-action-button button {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .call-to-action-button button {
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
 }
 
 .copyright {
@@ -214,218 +493,12 @@ header {
 }
 
 @media only screen and (min-width: 1200px){
-    header {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    .header-top {
-        gap: 30px;
-    }
-
-    .header-logo {
-        font-size: 24px;
-        color: #F9FAF8;
-    }
-
-    .links {
-        font-size: 18px;
-        color: #E5E7EB;
-    }
-
-    .header-body {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .hero-main-text {
-        font-size: 48px;
-    }
-
-    .hero-secondary-text {
-        font-size: 18px;
-    }
-
-    .header-body-image {
-        margin-left: 40px;
-        /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
-    }
-
-    .information-part {
-        margin-top: 40px;
-        margin-bottom: 100px;
-    }
-
-    .information-title {
-        font-size: 36px;
-    }
-
-    .illustration-part {
-        gap: 50px;
-        margin-top: 50px;
-    }
-
-    .illustration {
-        height: 150px;
-        width: 150px;
-    }
-
-    .caption {
-        margin-top: 5px;
-    }
-
-    .quote-part {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .quote-text {
-        width: 40%;
-        font-size: 36px;
-    }
-
-    .quote-owner {
-        width: 40%;
-        font-size: 24px;
-    }
-
-    .call-to-action-container {
-        margin-right: 11%;
-        margin-left: 11%;
-        margin-top: 6%;
-        margin-bottom: 6%;
-        padding-right: 6%;
-        padding-left: 6%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        justify-content: space-around;
-    }
-
-    .call-text {
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    .sign-up-text {
-        font-size: 20px;
-    }
-
-    .call-to-action-button button {
-        font-size: 20px;
-        width: 150px;
-        height: 50px;
-    }
-
     .copyright-text {
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 600px){
-    header {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-top {
-        gap: 15px;
-    }
-
-    .header-logo {
-        font-size: 18px;
-        color: burlywood;
-    }
-
-    .links {
-        font-size: 14px;
-        color: burlywood;
-    }
-
-    .header-body {
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .hero-main-text {
-        font-size: 36px;
-    }
-
-    .hero-secondary-text {
-        font-size: 16px;
-    }
-
-    .header-body-image {
-        flex: 2 1 0;
-        /*Photo by <a href="https://unsplash.com/@laurenceziegler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurence Ziegler</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
-    }
-
-    .information-part {
-        margin-top: 15px;
-        margin-bottom: 35px;
-    }
-
-    .information-title {
-        font-size: 27px;
-    }
-
-    .illustration-part {
-        gap: 16px;
-        margin-top: 16px;
-    }
-
-    .illustration {
-        height: 100px;
-        width: 100px;
-    }
-
-    .caption {
-        margin-top: 3px;
-        font-size: 14px;
-    }
-
-    .quote-part {
-        padding-top: 33px;
-        padding-bottom: 33px;
-    }
-
-    .quote-text {
-        width: 80%;
-        font-size: 27px;
-    }
-
-    .quote-owner {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .call-to-action-container {
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        padding-right: 2%;
-        padding-left: 2%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        justify-content: space-between;
-    }
-
-    .call-text {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .sign-up-text {
-        font-size: 16px;
-    }
-
-    .call-to-action-button button {
-        font-size: 14px;
-        width: 100px;
-        height: 30px;
-    }
-
     .copyright-text {
         font-size: 15px;
     }
