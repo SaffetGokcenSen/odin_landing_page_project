@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/SaffetGokcenSen/odin_landing_page_project/issues"
   },
-  "homepage": "https://github.com/SaffetGokcenSen/odin_landing_page_project#readme"
+  "homepage": "https://github.com/SaffetGokcenSen/odin_landing_page_project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ]
 }
