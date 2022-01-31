@@ -34,7 +34,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
 .page {
     display: flex;
     flex-direction: column;
-    height: 200vh;
 }
 
 header {
@@ -55,8 +54,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     header {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    header {
+        padding-left: 140px;
+        padding-right: 140px;
     }
 }
 
@@ -79,6 +85,12 @@ header {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    .header-top {
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
     .header-top {
         gap: 25px;
     }
@@ -103,7 +115,14 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .header-logo {
-        font-size: 21px;
+        font-size: 20px;
+        color: #F9FAF8;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .header-logo {
+        font-size: 22px;
         color: #F9FAF8;
     }
 }
@@ -125,6 +144,13 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .links {
         font-size: 16px;
+        color: #E5E7EB;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .links {
+        font-size: 17px;
         color: #E5E7EB;
     }
 }
@@ -153,8 +179,16 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .header-body {
         flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 53px;
+        margin-bottom: 53px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .header-body {
+        flex-direction: column;
+        margin-top: 76px;
+        margin-bottom: 76px;
     }
 }
 
@@ -185,7 +219,13 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .hero-main-text {
-        font-size: 42px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .hero-main-text {
+        font-size: 44px;
     }
 }
 
@@ -208,6 +248,12 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .hero-secondary-text {
         font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .hero-secondary-text {
+        font-size: 18px;
     }
 }
 
@@ -269,8 +315,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .information-part {
-        margin-top: 27px;
-        margin-bottom: 67px;
+        margin-top: 23px;
+        margin-bottom: 57px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .information-part {
+        margin-top: 31px;
+        margin-bottom: 79px;
     }
 }
 
@@ -282,7 +335,6 @@ header {
 }
 
 .information-title {
-    font-size: 36px;
     font-weight: 800;
     color: #1F2937;
     display: flex;
@@ -298,7 +350,13 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .information-title {
-        font-size: 32px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .information-title {
+        font-size: 33px;
     }
 }
 
@@ -324,8 +382,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .illustration-part {
-        gap: 33px;
-        margin-top: 33px;
+        gap: 27px;
+        margin-top: 27px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .illustration-part {
+        gap: 38px;
+        margin-top: 38px;
     }
 }
 
@@ -360,8 +425,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .illustration {
-        height: 125px;
-        width: 125px;
+        height: 116px;
+        width: 116px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .illustration {
+        height: 132px;
+        width: 132px;
     }
 }
 
@@ -385,6 +457,13 @@ header {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    .caption {
+        margin-top: 4px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
     .caption {
         margin-top: 4px;
         font-size: 15px;
@@ -416,8 +495,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .quote-part {
-        padding-top: 33px;
-        padding-bottom: 33px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .quote-part {
+        padding-top: 77px;
+        padding-bottom: 77px;
     }
 }
 
@@ -445,8 +531,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .quote-text {
-        width: 80%;
+        width: 67%;
         font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .quote-text {
+        width: 54%;
+        font-size: 33px;
     }
 }
 
@@ -472,8 +565,15 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .quote-owner {
-        width: 70%;
-        font-size: 21px;
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .quote-owner {
+        width: 60%;
+        font-size: 22px;
     }
 }
 
@@ -521,6 +621,20 @@ header {
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .call-to-action-container {
+        margin-right: 6%;
+        margin-left: 6%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding-right: 6%;
+        padding-left: 6%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: space-around;
+    }
+}
+
 @media only screen and (min-width: 1200px){
     .call-to-action-container {
         margin-right: 11%;
@@ -541,24 +655,31 @@ header {
     justify-content: center;
 }
 
+.call-text {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 768px){
     .call-text {
         font-size: 20px;
-        font-weight: bold;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .call-text {
-        font-size: 23px;
-        font-weight: bold;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .call-text {
+        font-size: 24px;
     }
 }
 
 @media only screen and (min-width: 1200px){
     .call-text {
         font-size: 26px;
-        font-weight: bold;
     }
 }
 
@@ -571,6 +692,12 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .sign-up-text {
         font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .sign-up-text {
+        font-size: 19px;
     }
 }
 
@@ -602,9 +729,17 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .call-to-action-button button {
-        font-size: 17px;
-        width: 125px;
-        height: 40px;
+        font-size: 16px;
+        width: 116px;
+        height: 36px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .call-to-action-button button {
+        font-size: 18px;
+        width: 132px;
+        height: 42px;
     }
 }
 
@@ -638,6 +773,12 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .copyright-text {
         font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .copyright-text {
+        font-size: 18px;
     }
 }
 
